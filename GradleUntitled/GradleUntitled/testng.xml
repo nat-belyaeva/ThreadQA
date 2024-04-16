@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MyCalcTest">
+    <listeners>
+        <listener class-name="listeners.RetryTransformerTestNG"/>
+    </listeners>
+    <test name="UnitTests" parallel="methods" thread-count="3">
+        <classes>
+            <class name="tests.testng.ParallelTests"/>
+        </classes>
+    </test>
+</suite>
